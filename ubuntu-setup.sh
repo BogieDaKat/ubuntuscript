@@ -254,7 +254,7 @@ install_docker() {
     echo \
       "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
       $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
-      tee /etc/apt/sources.list.d/docker.sources > /dev/null
+      tee /etc/apt/sources.list.d/docker.list > /dev/null
     
     # Update package index
     print_info "Updating package index..."
