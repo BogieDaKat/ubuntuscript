@@ -308,7 +308,7 @@ EOF
 headless_setup() {
     clear
     echo -e "${GREEN}╔════════════════════════════════════════╗${NC}"
-    echo -e "${GREEN}║   Headless Installation Setup         ║${NC}"
+    echo -e "${GREEN}║   Headless Installation Setup          ║${NC}"
     echo -e "${GREEN}╚════════════════════════════════════════╝${NC}"
     echo ""
     
@@ -323,7 +323,7 @@ headless_setup() {
 gui_setup() {
     clear
     echo -e "${GREEN}╔════════════════════════════════════════╗${NC}"
-    echo -e "${GREEN}║   GUI Installation Setup              ║${NC}"
+    echo -e "${GREEN}║   GUI Installation Setup               ║${NC}"
     echo -e "${GREEN}╚════════════════════════════════════════╝${NC}"
     echo ""
     
@@ -341,7 +341,7 @@ installation_menu() {
     while true; do
         clear
         echo -e "${BLUE}╔════════════════════════════════════════╗${NC}"
-        echo -e "${BLUE}║   Software Installation Menu          ║${NC}"
+        echo -e "${BLUE}║   Software Installation Menu           ║${NC}"
         echo -e "${BLUE}╚════════════════════════════════════════╝${NC}"
         echo ""
         echo "  1) Install Docker & Docker Compose"
@@ -401,7 +401,7 @@ main_menu() {
     while true; do
         clear
         echo -e "${GREEN}╔════════════════════════════════════════╗${NC}"
-        echo -e "${GREEN}║   Ubuntu Post-Installation Setup      ║${NC}"
+        echo -e "${GREEN}║   Ubuntu Post-Installation Setup       ║${NC}"
         echo -e "${GREEN}╚════════════════════════════════════════╝${NC}"
         echo ""
         echo "  1) Headless Installation Setup"
@@ -449,7 +449,7 @@ main_menu() {
 # Script entry point
 clear
 echo -e "${GREEN}════════════════════════════════════════${NC}"
-echo -e "${GREEN}   Ubuntu Post-Installation Setup        ${NC}"
+echo -e "${GREEN}   Ubuntu Post-Installation Setup       ${NC}"
 echo -e "${GREEN}════════════════════════════════════════${NC}"
 echo ""
 print_info "Starting setup script..."
