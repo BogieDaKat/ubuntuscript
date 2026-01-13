@@ -26,12 +26,12 @@ A comprehensive bash script for setting up Ubuntu after a fresh installation. Fe
 
 1. Download the script:
 ```bash
-wget https://raw.githubusercontent.com/yourusername/ubuntuscript/main/ubuntu-setup.sh
+wget https://raw.githubusercontent.com/BogieDaKat/ubuntuscript/main/ubuntu-setup.sh
 ```
 
 Or clone the repository:
 ```bash
-git clone https://github.com/yourusername/ubuntuscript.git
+git clone https://github.com/BogieDaKat/ubuntuscript.git
 cd ubuntuscript
 ```
 
