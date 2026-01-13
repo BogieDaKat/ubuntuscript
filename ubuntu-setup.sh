@@ -449,7 +449,7 @@ main_menu() {
 # Script entry point
 clear
 echo -e "${GREEN}════════════════════════════════════════${NC}"
-echo -e "${GREEN}   Ubuntu Post-Installation Setup       ${NC}"
+echo -e "${GREEN}   Ubuntu Post-Installation Setup        ${NC}"
 echo -e "${GREEN}════════════════════════════════════════${NC}"
 echo ""
 print_info "Starting setup script..."
