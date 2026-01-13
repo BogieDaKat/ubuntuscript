@@ -252,9 +252,17 @@ install_docker() {
     # Add the Docker repository to Apt sources
     print_info "Adding Docker repository..."
     echo \
-      "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
-      $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
-      tee /etc/apt/sources.list.d/docker.list > /dev/null
+     # "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+     # $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+     # tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+      sudo tee /etc/apt/sources.list.d/docker.sources <<EOF
+        Types: deb
+        URIs: https://download.docker.com/linux/ubuntu
+        Suites: $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}")
+        Components: stable
+        Signed-By: /etc/apt/keyrings/docker.asc
+    EOF
     
     # Update package index
     print_info "Updating package index..."
